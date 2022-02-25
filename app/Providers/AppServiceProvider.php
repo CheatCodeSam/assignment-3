@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-URL::forceScheme('https');
-
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
