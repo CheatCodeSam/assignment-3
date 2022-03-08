@@ -45,7 +45,13 @@ Route::get('events-feed/', function () {
 });
 
 Route::get('/db-test', function () {
-         echo DB::connection()->getDatabaseName();     
+    Route::get('/db-test', function () {
+        try {         
+             echo \DB::connection()->getDatabaseName();     
+        } catch (\Exception $e) {
+              echo 'None';
+        }
+    });    
 
 });
 
