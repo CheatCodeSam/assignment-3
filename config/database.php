@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DATABASE_URL', 'postgres'),
+    'default' => env('DB_CONNECTION', 'postgres'),
 
     /*
     |--------------------------------------------------------------------------
