@@ -45,15 +45,12 @@ Route::get('events-feed/', function () {
 });
 
 Route::get('/db-test', function () {
-    Route::get('/db-test', function () {
-        try {         
-             echo DB::connection()->getDatabaseName();     
-        } catch (Exception $e) {
-              echo 'None';
-        }
-    });    
-
-});
+    try {         
+         echo DB::connection()->getDatabaseName();     
+    } catch (Exception $e) {
+          echo 'None';
+    }
+});    
 
 Route::fallback(function () {
     return view('fallback');
