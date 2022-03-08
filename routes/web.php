@@ -45,7 +45,7 @@ Route::get('events-feed/', function () {
 });
 
 Route::get('/db-test', function () {
-         echo env('DB_CONNECTION', 'DATABASE_URL');     
+         echo DB::connection()->getDatabaseName();     
 
 });
 
