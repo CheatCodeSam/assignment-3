@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TodoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('todos/', function () {
-    return view('todos');
-});
 
 Route::get('calendar/', function () {
     return view('calendar');
@@ -56,6 +53,8 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
+
+Route::resource('/todos', TodoController::class);
 
 Route::fallback(function () {
     return view('fallback');
