@@ -35,7 +35,7 @@
 $( document ).ready(function() {
     var calendar = new FullCalendar.Calendar($('#calendar')[0], {
       initialView: 'dayGridMonth',
-      events: {events:  {{!! json_encode($events) !!}} }
+      events: {events:  JSON.parse({{!! json_encode($events) !!}}) }
     });
     calendar.render();
 })
