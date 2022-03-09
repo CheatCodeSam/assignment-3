@@ -44,7 +44,7 @@ class CalenderEventController extends Controller
 
        ]);
 
-       $todo = Todo::create([ 
+       $todo = CalenderEvent::create([ 
             'title' => $request->title, 
             'begin' => date($request->begin),
             'finish' => date($request->finish)
