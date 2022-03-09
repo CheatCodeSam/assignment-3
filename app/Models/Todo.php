@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Todo extends Model
 {
     use HasFactory;
+    protected $table = 'calenderevents';
     protected $fillable = ['title','progress'];
 }
