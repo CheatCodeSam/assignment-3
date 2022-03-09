@@ -8,7 +8,6 @@
 
 @section('content')
 
-          <p>{{ json_encode($events) }}</p>
 
 
 
@@ -36,7 +35,7 @@
 $( document ).ready(function() {
     var calendar = new FullCalendar.Calendar($('#calendar')[0], {
       initialView: 'dayGridMonth',
-      events: '/events-feed'
+      events: {events:  {{ json_encode($events) }}}
     });
     calendar.render();
 })
