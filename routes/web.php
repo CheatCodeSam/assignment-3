@@ -20,10 +20,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('calendar/', function () {
-    return view('calendar');
-});
-
 Route::get('board/', function () {
     return view('board');
 });
