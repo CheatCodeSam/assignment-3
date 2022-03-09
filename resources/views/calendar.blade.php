@@ -7,6 +7,16 @@
 @stop
 
 @section('content')
+
+@foreach($events AS $event)
+          <p>{{ $todo->title }}</p>
+          <p>{{ $todo->start }}</p>
+          <p>{{ $todo->end }}</p>
+
+@endforeach
+
+
+
 <a href="{{ route('calenderevent.create') }} " class="btn btn-primary" >Create</a>
 <div class="row">
   <div class="col-md-12">

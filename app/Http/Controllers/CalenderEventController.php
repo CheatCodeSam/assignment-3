@@ -15,7 +15,8 @@ class CalenderEventController extends Controller
      */
     public function index()
     {
-//
+        $events = CalenderEvent::select('title', 'begin AS start', 'finish AS end')->get();
+        return view('calendar',compact('events'));
     }
 
     /**
