@@ -24,6 +24,10 @@ Route::get('board/', function () {
     return view('board');
 });
 
+Route::get('calendar/', function () {
+    return view('calendar');
+});
+
 Route::get('events-feed/', function () {
     return '[
         {
