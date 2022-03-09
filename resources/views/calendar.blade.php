@@ -8,12 +8,8 @@
 
 @section('content')
 
-@foreach($events AS $event)
-          <p>{{ $event->title }}</p>
-          <p>{{ $event->start }}</p>
-          <p>{{ $event->end }}</p>
+          <p>{{ json_encode($events) }}</p>
 
-@endforeach
 
 
 

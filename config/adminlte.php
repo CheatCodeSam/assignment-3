@@ -236,7 +236,7 @@ return [
         ],
         [         
             'text' => 'Calendar',
-            'url'  => 'calendar',
+            'url'  => 'calenderevent',
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         [         
