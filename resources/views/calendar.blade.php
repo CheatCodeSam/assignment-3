@@ -23,7 +23,7 @@
     </div>
   </div>
 </div>
-@stop
+@stops
 
 @section('css')
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css">
@@ -35,7 +35,7 @@
 $( document ).ready(function() {
     var calendar = new FullCalendar.Calendar($('#calendar')[0], {
       initialView: 'dayGridMonth',
-      events: {events:  {{ json_encode($events) }}}
+      events: {events:  {{!! json_encode($events) !!}} }
     });
     calendar.render();
 })
