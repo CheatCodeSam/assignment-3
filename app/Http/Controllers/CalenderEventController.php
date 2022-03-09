@@ -51,7 +51,7 @@ class CalenderEventController extends Controller
             'finish' => date($request->finish)
        ]);
 
-       return $this->index();
+       return redirect('/calendar');
     }
 
     /**
