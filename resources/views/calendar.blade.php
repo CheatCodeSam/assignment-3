@@ -9,9 +9,9 @@
 @section('content')
 
 @foreach($events AS $event)
-          <p>{{ $todo->title }}</p>
-          <p>{{ $todo->start }}</p>
-          <p>{{ $todo->end }}</p>
+          <p>{{ $event->title }}</p>
+          <p>{{ $event->start }}</p>
+          <p>{{ $event->end }}</p>
 
 @endforeach
 
